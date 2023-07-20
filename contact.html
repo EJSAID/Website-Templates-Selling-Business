@@ -223,21 +223,7 @@
                                 function showThankYouMessage() {
                                     var email = document.getElementById("email").value;
                             
-                                    // Check if the email is entered
-                                    if (email.trim() === "") {
-                                        Swal.fire({
-                                            icon: "error",
-                                            title: "Oops!",
-                                            text: "Please enter your email before subscribing.",
-                                            showConfirmButton: true,
-                                            showClass: {
-                                                popup: 'animate__animated animate__zoomIn'
-                                            },
-                                            hideClass: {
-                                                popup: 'animate__animated animate__zoomOut'
-                                            }
-                                        });
-                                    } else if (!email.includes("@")) {
+                                   if (!email.includes("@")) {
                                         // Check if the email contains "@" symbol
                                         Swal.fire({
                                             icon: "error",
@@ -429,7 +415,7 @@
           </div>
       </div>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <a href="https://api.whatsapp.com/send?phone=+212766543221&text=Hello%21%20I%20would%20like%20more%20information%20about%20your service%202." class="float" target="_blank">
+      <a href="https://api.whatsapp.com/send?phone=+212766543221&text=Hello%21%20I%20would%20like%20more%20information%20about%20your service%20." class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
     <style>
